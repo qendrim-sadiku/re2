@@ -14382,8 +14382,8 @@ h4 {
 }
 
 .slider-part .testimonial .pic {
-  width: 220px;
-  height: 220px;
+  width: 200px;
+  height: 200px;
   border: none;
   margin: 0 auto;
   position: absolute;
@@ -14394,6 +14394,7 @@ h4 {
 
 .slider-part .testimonial .pic img {
   width: 100%;
+  height: 100%;
   height: auto;
   border-radius: 100px;
   border: 1px solid #cccccc;
@@ -14654,8 +14655,8 @@ h4 {
   background: #fff;
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 20px;
-  padding-top: 25px;
+  padding-bottom: 15.5px;
+  padding-top: 15.5px;
   border: 1px solid #cccccc;
   background: #fff;
 }
@@ -14755,38 +14756,89 @@ h4 {
   position: relative;
 }
 
-.main-donate .donators img {
+.main-donate .donators .img-href img {
   float: left !important;
   margin-right: 10px;
   border-radius: 100px;
+  margin-top: -5px;
   border: 1px solid #cccccc;
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
 }
 
-@media (max-width: 575px) {
-  .main-donate .donators img {
-    width: 50%;
-    margin: auto;
-  }
-}
-
-@media (max-width: 991px) {
-  .main-donate .donators img {
-    width: 50%;
-    margin: auto;
+@media (max-width: 767px) {
+  .main-donate .donators .img-href img {
+    width: 100px;
+    max-width: 100%;
+    height: auto;
+    margin: auto !important;
   }
 }
 
 @media (max-width: 1199px) {
-  .main-donate .donators img {
-    width: 50%;
-    margin: auto;
+  .main-donate .donators .img-href img {
+    width: 100px;
+    max-width: 100%;
+    height: auto;
+    margin: auto !important;
   }
 }
 
 @media (max-width: 1365px) {
-  .main-donate .donators img {
-    width: 50%;
-    margin: auto;
+  .main-donate .donators .img-href img {
+    width: 100px;
+    max-width: 100%;
+    height: auto;
+    margin: auto !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-donate .donators .img-href {
+    width: 100% !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 1199px) {
+  .main-donate .donators .img-href {
+    width: 100% !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 1365px) {
+  .main-donate .donators .img-href {
+    width: 100% !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -14939,6 +14991,22 @@ h4 {
   }
 }
 
+@media (max-width: 767px) {
+  .main-donate .donators {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+}
+
 @media (max-width: 991px) {
   .main-donate .donators {
     width: 100%;
@@ -15003,19 +15071,25 @@ h4 {
   display: inline-block;
   width: 100%;
   max-width: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-bottom: 20px;
   padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .social-media-donate .facebook-donate {
   width: 22%;
-  float: left;
   background: #3b5998;
   text-align: center;
-  margin-right: 25px;
-  margin-left: 7px;
   padding-top: 30px;
   padding-bottom: 0px;
 }
@@ -15047,26 +15121,6 @@ h4 {
 @media (max-width: 575px) {
   .social-media-donate .facebook-donate {
     width: 100% !important;
-    float: none !important;
-    margin-left: 0px !important;
-  }
-}
-
-@media (max-width: 767px) {
-  .social-media-donate .facebook-donate {
-    width: 47% !important;
-    float: left !important;
-    margin-right: 10px !important;
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 991px) {
-  .social-media-donate .facebook-donate {
-    width: 47% !important;
-    float: left !important;
-    margin-right: 10px !important;
-    margin-left: 0px !important;
     margin-bottom: 10px;
   }
 }
@@ -15075,43 +15129,15 @@ h4 {
   .social-media-donate .facebook-donate {
     width: 47% !important;
     float: left !important;
-    margin-right: 10px !important;
     margin-left: 0px !important;
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 1365px) {
-  .social-media-donate .facebook-donate {
-    width: 47% !important;
-    float: left !important;
-    margin-left: 0px !important;
-    margin-right: 10px !important;
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 1679px) {
-  .social-media-donate .facebook-donate {
-    width: 21%;
-    margin-right: 20px;
-    margin-left: 5px;
-  }
-}
-
-@media (min-width: 1680px) and (max-width: 1800px) {
-  .social-media-donate .facebook-donate {
-    margin-left: 3px;
+    margin-bottom: 10px !important;
   }
 }
 
 .social-media-donate .twitter-donate {
-  width: 22%;
-  float: left;
+  width: 23%;
   background: #1baee1;
   text-align: center;
-  margin-right: 25px;
-  margin-left: 0px;
   padding-top: 30px;
   padding-bottom: 0px;
 }
@@ -15142,26 +15168,7 @@ h4 {
 
 @media (max-width: 575px) {
   .social-media-donate .twitter-donate {
-    width: 48% !important;
-    margin-right: 0px !important;
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 767px) {
-  .social-media-donate .twitter-donate {
-    width: 50% !important;
-    float: left !important;
-    margin-right: 0px !important;
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 991px) {
-  .social-media-donate .twitter-donate {
-    width: 50% !important;
-    float: left !important;
-    margin-right: 0px !important;
+    width: 100% !important;
     margin-bottom: 10px;
   }
 }
@@ -15169,40 +15176,16 @@ h4 {
 @media (max-width: 1199px) {
   .social-media-donate .twitter-donate {
     width: 49% !important;
-    float: left !important;
+    float: right !important;
     margin-right: 0px !important;
-    margin-bottom: 10px;
+    margin-bottom: 10px !important;
   }
-}
-
-@media (max-width: 1365px) {
-  .social-media-donate .twitter-donate {
-    width: 49% !important;
-    float: left !important;
-    margin-right: 0px !important;
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 1679px) {
-  .social-media-donate .twitter-donate {
-    width: 21%;
-    margin-right: 20px;
-    margin-left: 0px;
-  }
-}
-
-.social-media-donate .twitter-donate:hover {
-  text-decoration: none !important;
 }
 
 .social-media-donate .gmail-donate {
-  width: 22%;
-  float: left;
+  width: 23%;
   background: #c63d2d;
   text-align: center;
-  margin-right: 25px;
-  margin-left: 0px;
   padding-top: 30px;
   padding-bottom: 0px;
 }
@@ -15233,24 +15216,7 @@ h4 {
 
 @media (max-width: 575px) {
   .social-media-donate .gmail-donate {
-    width: 47% !important;
-    margin-right: 10px;
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 767px) {
-  .social-media-donate .gmail-donate {
-    width: 47% !important;
-    margin-right: 10px;
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 991px) {
-  .social-media-donate .gmail-donate {
-    width: 47% !important;
-    margin-right: 10px;
+    width: 100% !important;
     margin-bottom: 10px;
   }
 }
@@ -15258,38 +15224,16 @@ h4 {
 @media (max-width: 1199px) {
   .social-media-donate .gmail-donate {
     width: 47% !important;
-    margin-right: 10px;
+    float: left !important;
+    margin-right: 0px;
     margin-bottom: 10px;
   }
-}
-
-@media (max-width: 1365px) {
-  .social-media-donate .gmail-donate {
-    width: 47% !important;
-    margin-right: 10px;
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 1679px) {
-  .social-media-donate .gmail-donate {
-    width: 21%;
-    margin-right: 20x;
-    margin-left: 0px;
-  }
-}
-
-.social-media-donate .gmail-donate:hover {
-  text-decoration: none !important;
 }
 
 .social-media-donate .linkedin-donate {
-  width: 22%;
-  float: left;
+  width: 23%;
   background: #4875b4;
   text-align: center;
-  margin-right: 0px;
-  margin-left: 0px;
   padding-top: 30px;
   padding-bottom: 0px;
 }
@@ -15320,54 +15264,36 @@ h4 {
 
 @media (max-width: 575px) {
   .social-media-donate .linkedin-donate {
-    width: 47% !important;
-    margin-right: 0px;
-    margin-bottom: 0px;
-  }
-}
-
-@media (max-width: 767px) {
-  .social-media-donate .linkedin-donate {
-    width: 50% !important;
-    margin-right: 0px;
-    margin-bottom: 0px;
-  }
-}
-
-@media (max-width: 991px) {
-  .social-media-donate .linkedin-donate {
-    width: 50% !important;
-    margin-right: 0px;
-    margin-bottom: 0px;
+    width: 100% !important;
+    margin-bottom: 10px;
   }
 }
 
 @media (max-width: 1199px) {
   .social-media-donate .linkedin-donate {
     width: 50% !important;
+    float: right;
     margin-right: 0px;
     margin-bottom: 0px;
   }
 }
 
-@media (max-width: 1365px) {
-  .social-media-donate .linkedin-donate {
-    width: 49% !important;
-    margin-right: 0px;
-    margin-bottom: 0px;
+@media (max-width: 575px) {
+  .social-media-donate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
-@media (max-width: 1679px) {
-  .social-media-donate .linkedin-donate {
-    width: 21%;
-    margin-right: 0px;
-    margin-left: 0px;
+@media (max-width: 1199px) {
+  .social-media-donate {
+    display: table;
   }
-}
-
-.social-media-donate .linkedin-donate:hover {
-  text-decoration: none !important;
 }
 
 .donate-text {
